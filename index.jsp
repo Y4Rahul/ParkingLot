@@ -8,19 +8,20 @@
 .navbar nav>ul>li>a:not([role=button]) {
     color: rgba(247,152,152,1);
 }
+
 </style>
 <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 
-<header class="navbar">
+<header class="navbar navbar-fluid">
   <nav style="background-color: #333;">
     <ul>
       <li> <a href="index.jsp">Home</a> </li>
     </ul>
     <ul>
     	<li> <a href="#">Edit Parking Spot</a> </li>
-    	<li> <a href="#">Search Spot</a> </li>
+    	<li> <a href="searchspot.jsp">Search Spot</a> </li>
     	<li> <a href="">Report</a> </li>
         <li> <button id="sample">login/Sign up</button> </li>
     </ul>
@@ -38,9 +39,7 @@
     </div>
   </nav>
 </header>
-<img class="thumbnail" style="width:480px" src="search-parking.jpg" alt="Search Parking"/>
-<img class="thumbnail" style="width:480px" src="parking-problem.jpg" alt="Parking Problem"/>
-<a href="#"> Search Spot</a>
+<img class="thumbnail" style="width:100%; height:478px;" src="mumbai.jpg" alt="Mumbai"/>
 <script>
 $sampleModal = k$.modal('#modal1');
 k$.$('#sample').addEventListener('click', function(e) {
