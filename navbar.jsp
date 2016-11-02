@@ -31,9 +31,10 @@
     <button id="register"  onclick="register()">Register</button>
     <span style="float:right;"><a data-modal-close="true" href="#">x</a></span>
     </header>
-    <form>
+    
     <div>
     <div id="login-content">
+    	<form>
     	<div class="row" style="text-align:center;">
     		<div class="col-6">
     			Username:
@@ -50,8 +51,13 @@
     			<input type="password" name="password" />
     		</div>
     	</div>
+    	    <footer style="text-align:center;"> 
+      		<button type="submit" class="button button-primary">Login</button>
+    </footer>
+    </form>
     </div>
     <div id="register-content" style="display:none;">
+    	<form action="register.jsp" method="post">
     	<div class="row" style="text-align:center;">
     		<div class="col-6">
     			First Name:
@@ -100,12 +106,12 @@
     			<input type="password" name="password" />
     		</div>
     	</div>
-    </div>
-    </div>
-    <footer style="text-align:center;"> 
-      		<button type="submit" class="button button-primary">Login</button>
+    	    <footer style="text-align:center;"> 
+      		<button type="submit" class="button button-primary">signup</button>
     </footer>
     </form>
+    </div>
+    </div>
     </div>
   </nav>
 </header>
