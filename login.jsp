@@ -41,9 +41,8 @@
  while(result.next()){
 	 if(username.equals(result.getString("username")) && login_password.equals(result.getString("password"))){
 		 System.out.println("matched");
-		 String site = new String("index.jsp");
-		   response.setStatus(response.SC_MOVED_TEMPORARILY);
-		   response.setHeader("Location", site); 
+		 RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
+		 rd.forward(request, response); 
 	 }
 	 else{
 		 System.out.println("not found");

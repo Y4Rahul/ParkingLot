@@ -21,7 +21,12 @@
     	<li> <a href="bookedspot.jsp">Edit Parking Spot</a> </li>
     	<li> <a href="searchspot.jsp">Search Spot</a> </li>
     	<li> <a href="">Report</a> </li>
+    	<% String username = request.getParameter("username"); %>
+    	<% if(username==null){ %>
         <li> <button id="sample">login/Sign up</button> </li>
+        <%} else{ %>
+        <li> <button id="sample"><%= username %></button> </li>
+        <% } %>
     </ul>
     
     <div id="modal1" class="modal" style="display:none;">

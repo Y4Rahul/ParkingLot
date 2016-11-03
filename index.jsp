@@ -8,7 +8,6 @@
 </head>
 <body>
 <%@ include file="navbar.jsp" %>
-
 <img class="thumbnail" style="width:100%; height:478px;" src="mumbai.jpg" alt="Mumbai"/>
 </body>
 </html>
