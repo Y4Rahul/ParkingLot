@@ -34,7 +34,7 @@
     
     <div>
     <div id="login-content">
-    	<form>
+    	<form action="login.jsp" method="post">
     	<div class="row" style="text-align:center;">
     		<div class="col-6">
     			Username:
